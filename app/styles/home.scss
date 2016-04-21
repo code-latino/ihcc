@@ -61,6 +61,47 @@ body {
 
 
 
+// About us
+
+.about-us {
+  position: relative;
+  
+  &:after{
+    content: "";
+    position: absolute;
+    width: 97.5%;
+    min-height: 350px;
+    background-color: $light-gray;
+    top: 0;
+    left: 0;
+    margin: 0 15px;
+    z-index: -100;
+  };
+}
+
+.image-block {
+  min-height: 350px;
+  color: white;
+  padding: 3em;
+  text-align: center;
+
+  &.about {
+    background-image: url();
+    background-image: url(/assets/images/about.jpg);
+    background-size: cover;
+  }
+}
+
+.block-content {
+  padding: 5em 3em 2em 2em;
+
+  h4 {
+    text-transform: uppercase;
+    color: $blue;
+  }
+
+}
+
 
 
 
