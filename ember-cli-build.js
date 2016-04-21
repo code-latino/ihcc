@@ -11,7 +11,7 @@ module.exports = function(defaults) {
     }
     // Add options here
   });
-  
+
   app.import('bower_components/bootstrap-sass/assets/javascripts/bootstrap.js');
 
   // Use `app.import` to add additional libraries to the generated

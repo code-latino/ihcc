@@ -1,6 +1,7 @@
 body {
   color: $gray;
   font-family: 'Open Sans', sans-serif;
+  @include font-smoothing;
 }
 
 // Nav
@@ -45,8 +46,24 @@ body {
     bottom: 0;
     left: 0;
     width: 100%;
-    padding: 1.5em 3em;
+    padding: 2.5em 3em;
     color: white;
   }
-
 }
+
+.social-block {
+  text-align: right;
+  .fa {
+    font-size: 1.5em;
+    margin-left: 10px;
+  }
+}
+
+
+
+
+
+
+
+
+
