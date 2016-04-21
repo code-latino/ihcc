@@ -32,3 +32,45 @@ $black: #000000;
     -moz-osx-font-smoothing: auto;
   }
 }
+
+
+// EXTENDS
+
+.row-bg-color-on-after{
+  position: relative;
+
+  &:after{
+    content: "";
+    position: absolute;
+    width: 97.5%;
+    min-height: 350px;
+    background-color: $light-gray;
+    top: 0;
+    left: 0;
+    margin: 0 15px;
+    z-index: -100;
+  };
+}
+
+
+// TABLES
+
+.table-negative-color {
+  color: white;
+}
+
+//BUTTONS
+
+
+.btn-simple {
+  color: $aqua;
+}
+
+.btn-simple-inverse {
+  color: white;
+
+  &:hover{
+    background-color: $aqua;
+    color: white;
+  };
+}

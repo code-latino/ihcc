@@ -94,13 +94,62 @@ body {
 
 .block-content {
   padding: 5em 3em 2em 2em;
+  min-height: 300px;
 
   h4 {
     text-transform: uppercase;
     color: $blue;
   }
-
 }
+
+// Events
+
+.events {
+  @extend .row-bg-color-on-after; 
+
+  &:after {
+    background-color: $blue;
+  };
+
+  .block-content-table {
+    padding: 6em 3em 2em 2em;
+
+    &.events-image {
+      background-image: url(/assets/images/events.png);
+      background-size: cover;
+      min-height: 350px;
+    }
+
+    .table {
+      @include transparency('background-color', rgba(black, 0.6), white);
+      border: 1px solid $aqua;
+
+      .fa {
+        color: $aqua;
+        margin-right: 10px;
+      }
+
+      td {
+        padding: 15px 8px;
+      }
+
+      .btn-column {
+        text-align: center;
+        &:hover{
+          background-color: $aqua;
+          color: white
+        };
+      }
+    }
+  }
+
+  .block-content {
+    color: white;
+  }
+}
+
+
+
 
 
 
