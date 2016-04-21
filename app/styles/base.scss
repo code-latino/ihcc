@@ -1,0 +1,22 @@
+// VARIABLES
+
+// Brand Colors
+
+$blue: #005d92;
+$aqua: #00829b;
+$gray: #636363;
+$gray: #636363;
+$light-gray: #ebebeb;
+$black: #000000;
+
+
+
+// MIXINS
+
+@mixin transparency($attribute, $color, $background) {
+  $percent: alpha($color) * 100%;
+  $opaque: opacify($color, 1);
+  $solid-color: mix($opaque, $background, $percent);
+  #{$attribute}: $solid-color;
+  #{$attribute}: $color;
+}
