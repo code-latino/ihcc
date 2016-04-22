@@ -5,6 +5,10 @@ body {
   background-color: $light-gray;
 }
 
+/*.home-content-wrapper {
+  background-color: white;
+}*/
+
 // Nav
 
 .navbar.navbar-default.navbar-default {
@@ -65,6 +69,10 @@ body {
 // About us
 
 .about-us {
+  min-height: 350px;
+}
+
+.about-us {
   position: relative;
   
   &:after{
@@ -105,8 +113,12 @@ body {
 
 // Events
 
+.events-wrapper {
+  background-color: $blue;
+}
+
 .events {
-  @extend .row-bg-color-on-after; 
+  min-height: 350px;
 
   &:after {
     background-color: $blue;
@@ -151,9 +163,10 @@ body {
 
 // BIOS
 
-.bios {
-  padding: 4em 0;
+.bios-wrapper {
+  padding: 4em 2em;
   text-align: center;
+  background-color: white;
 }
 
 .panel {
