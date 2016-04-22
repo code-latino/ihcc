@@ -2,6 +2,7 @@ body {
   color: $gray;
   font-family: 'Open Sans', sans-serif;
   @include font-smoothing;
+  background-color: $light-gray;
 }
 
 // Nav
@@ -71,7 +72,7 @@ body {
     position: absolute;
     width: 97.5%;
     min-height: 350px;
-    background-color: $light-gray;
+    background-color: white;
     top: 0;
     left: 0;
     margin: 0 15px;
@@ -156,7 +157,7 @@ body {
 
 .panel {
   padding: 3em 1em 2em;
-  background-color: $light-gray;
+  background-color: white;
   border: 1px solid darken($light-gray, 5%);
   text-align: center;
   min-height: 350px;
@@ -205,6 +206,17 @@ body {
 
 
 
+.footer {
+  background-color: $aqua;
+  padding: 8em 2em;
+  text-align: center;
+  color: white;
+
+  .fa {
+    font-size: 1.5em;
+    margin-right: 20px;
+  }
+}
 
 
 
