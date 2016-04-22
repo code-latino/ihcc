@@ -11,6 +11,11 @@ body {
 
 // Nav
 
+.content-wrapper {
+  @include box-shadow(0px, 1px, 2px, 1px, rgba(0,0,0,0.1), false)
+  background-color: white;
+}
+
 .navbar.navbar-default.navbar-default {
   margin-bottom: 0;
 }
