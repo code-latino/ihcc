@@ -1,0 +1,240 @@
+body {
+  color: $gray;
+  font-family: 'Open Sans', sans-serif;
+  @include font-smoothing;
+  background-color: $light-gray;
+}
+
+// Nav
+
+.navbar.navbar-default.navbar-default {
+  margin-bottom: 0;
+}
+
+.navbar-nav > li > a {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.brand-logo {
+  width: 120px;
+  float: left;
+  margin-left: 10px;
+}
+
+.brand-title {
+  font-size: 0.8em;
+  display: inline-block;
+  padding: 20px 10px;
+  text-transform: uppercase;
+}
+
+// Hero Image
+
+.hero-top-panel {
+  min-height: 500px;
+  position: relative;
+
+  &.hero-top-image {
+    background-image: url(/assets/images/hero-panel.jpg);
+    background-size: cover;
+  }
+
+  .hero-top-text {
+    border-top: 1px solid $aqua;
+    @include transparency('background-color', rgba(black, 0.7), white);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 2.5em 3em;
+    color: white;
+  }
+}
+
+.social-block {
+  text-align: right;
+  .fa {
+    font-size: 1.5em;
+    margin-left: 10px;
+  }
+}
+
+
+
+// About us
+
+.about-us {
+  position: relative;
+  
+  &:after{
+    content: "";
+    position: absolute;
+    width: 97.5%;
+    min-height: 350px;
+    background-color: white;
+    top: 0;
+    left: 0;
+    margin: 0 15px;
+    z-index: -100;
+  };
+}
+
+.image-block {
+  min-height: 350px;
+  color: white;
+  padding: 3em;
+  text-align: center;
+
+  &.about {
+    background-image: url();
+    background-image: url(/assets/images/about.jpg);
+    background-size: cover;
+  }
+}
+
+.block-content {
+  padding: 5em 3em 2em 2em;
+  min-height: 300px;
+
+  h4 {
+    text-transform: uppercase;
+    color: $blue;
+  }
+}
+
+// Events
+
+.events {
+  @extend .row-bg-color-on-after; 
+
+  &:after {
+    background-color: $blue;
+  };
+
+  .block-content-table {
+    padding: 6em 3em 2em 2em;
+
+    &.events-image {
+      background-image: url(/assets/images/events.png);
+      background-size: cover;
+      min-height: 350px;
+    }
+
+    .table {
+      @include transparency('background-color', rgba(black, 0.6), white);
+      border: 1px solid $aqua;
+
+      .fa {
+        color: $aqua;
+        margin-right: 10px;
+      }
+
+      td {
+        padding: 15px 8px;
+      }
+
+      .btn-column {
+        text-align: center;
+        &:hover{
+          background-color: $aqua;
+          color: white
+        };
+      }
+    }
+  }
+
+  .block-content {
+    color: white;
+  }
+}
+
+// BIOS
+
+.bios {
+  padding: 4em 0;
+  text-align: center;
+}
+
+.panel {
+  padding: 3em 1em 2em;
+  background-color: white;
+  border: 1px solid darken($light-gray, 5%);
+  text-align: center;
+  min-height: 350px;
+  position: relative;
+
+  img {
+    margin-bottom: 2em;
+  }
+
+  h5 {
+    color: $blue;
+    font-weight: 600;
+  }
+
+  p {
+    text-transform: uppercase;
+    font-size: .9em;
+  }
+
+  .actions {
+    background-color: $aqua;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    clear: both;
+
+    a {
+      width: 50%;
+      color: white;
+      padding: .6em;
+      float: left;
+      text-align: center;
+      text-transform: uppercase;
+
+      .fa {
+        margin-right: 10px;
+      }
+
+      &:hover {
+        background-color: $blue;
+      };
+    }
+  }
+}
+
+
+
+.footer {
+  background-color: $aqua;
+  padding: 8em 2em;
+  text-align: center;
+  color: white;
+
+  .fa {
+    font-size: 1.5em;
+    margin-right: 20px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

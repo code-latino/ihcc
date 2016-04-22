@@ -1,0 +1,76 @@
+// VARIABLES
+
+// Brand Colors
+
+$blue: #005d92;
+$aqua: #00829b;
+$gray: #636363;
+$gray: #636363;
+$light-gray: #ebebeb;
+$black: #000000;
+
+
+
+// MIXINS
+
+@mixin transparency($attribute, $color, $background) {
+  $percent: alpha($color) * 100%;
+  $opaque: opacify($color, 1);
+  $solid-color: mix($opaque, $background, $percent);
+  #{$attribute}: $solid-color;
+  #{$attribute}: $color;
+}
+
+
+@mixin font-smoothing($value: antialiased) {
+  @if $value == antialiased {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  @else {
+    -webkit-font-smoothing: subpixel-antialiased;
+    -moz-osx-font-smoothing: auto;
+  }
+}
+
+
+// EXTENDS
+
+.row-bg-color-on-after{
+  position: relative;
+
+  &:after{
+    content: "";
+    position: absolute;
+    width: 97.5%;
+    min-height: 350px;
+    background-color: $light-gray;
+    top: 0;
+    left: 0;
+    margin: 0 15px;
+    z-index: -100;
+  };
+}
+
+
+// TABLES
+
+.table-negative-color {
+  color: white;
+}
+
+//BUTTONS
+
+
+.btn-simple {
+  color: $aqua;
+}
+
+.btn-simple-inverse {
+  color: white;
+
+  &:hover{
+    background-color: $aqua;
+    color: white;
+  };
+}
