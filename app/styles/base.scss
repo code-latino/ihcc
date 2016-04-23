@@ -87,3 +87,32 @@ $black: #000000;
     color: white;
   };
 }
+
+
+
+
+// BUTTONS
+
+
+.btn-default {
+  background: $aqua;
+  padding: .6em 2em;
+  color: white;
+  border: none;
+
+  &:hover {
+    background: $blue;
+    color: white;
+  };
+}
+
+
+
+
+
+
+
+
+
+
+

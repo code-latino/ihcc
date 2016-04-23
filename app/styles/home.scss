@@ -3,6 +3,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   @include font-smoothing;
   background-color: $light-gray;
+  line-height: 1.5em;
 }
 
 /*.home-content-wrapper {
@@ -21,8 +22,8 @@ body {
 }
 
 .navbar-nav > li > a {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 
 .brand-logo {
@@ -58,6 +59,10 @@ body {
     width: 100%;
     padding: 2.5em 3em;
     color: white;
+
+    h2 {
+      margin-bottom: 20px;
+    }
   }
 }
 
@@ -91,6 +96,13 @@ body {
     margin: 0 15px;
     z-index: -100;
   };
+
+  .btn-default {
+    float: right;
+    .fa {
+      margin-right: 10px;
+    }
+  }
 }
 
 .image-block {
@@ -123,7 +135,7 @@ body {
 }
 
 .events {
-  min-height: 350px;
+  min-height: 400px;
 
   &:after {
     background-color: $blue;
@@ -135,7 +147,7 @@ body {
     &.events-image {
       background-image: url(/assets/images/events.png);
       background-size: cover;
-      min-height: 350px;
+      min-height: 400px;
     }
 
     .table {
@@ -149,6 +161,10 @@ body {
 
       td {
         padding: 15px 8px;
+
+        a {
+          text-decoration: none;
+        }
       }
 
       .btn-column {
@@ -211,6 +227,7 @@ body {
       float: left;
       text-align: center;
       text-transform: uppercase;
+      text-decoration: none;
 
       .fa {
         margin-right: 10px;
