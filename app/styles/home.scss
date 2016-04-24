@@ -45,9 +45,9 @@ body {
   min-height: 500px;
   position: relative;
 
-  &.hero-top-image {
-    background-image: url(/assets/images/hero-panel.jpg);
-    background-size: cover;
+  img {
+    width: 100%;
+    height: auto;
   }
 
   .hero-top-text {
@@ -264,6 +264,32 @@ body {
   }
 }
 
+
+// Home Modal
+
+.home-modal {
+
+  h3 {
+    color: $blue;
+  }
+
+  .home-modal-header {
+    text-align: center; 
+  }
+
+  .person-title {
+    text-transform: uppercase;
+    font-size: .8;
+  }
+
+  .fa {
+    margin-right: 10px;
+  }
+
+  .modal-body {
+    padding: 3em;
+  }
+}
 
 
 
