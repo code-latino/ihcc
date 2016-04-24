@@ -93,170 +93,41 @@
   <div class="bios">
     <h2> TEAM </h2><br><br>
     <div class="row">
-      <div class="col-md-3">
-        <div class="panel">
-          <img src="/assets/images/duque.png">
-          <h5>Omar Duque</h5>
-          <p>president and ceo</p>
-          <div class="actions">
-            <a href="mailto:oduque@ihccbusiness.net">{{fa-icon "envelope"}}contact</a>
-            <a href="">{{fa-icon "user"}}bio</a>
+      {{#each model as |person|}}
+        <div class="col-md-3">
+          <div class="panel">
+            <img src="{{person.image}}">
+            <h5>{{person.name}}</h5>
+            <p>{{person.title}}</p>
+            <div class="actions">
+              <a href="mailto:{{person.email}}">{{fa-icon "envelope"}}contact</a>
+              <a href="#" data-toggle="modal" data-target="#{{person.identifier}}">
+                {{fa-icon "user"}}bio
+              </a>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="col-md-3">
-        <div class="panel">
-          <img src="/assets/images/escalante.png">
-          <h5>Roberto Escalante, MBA</h5>
-          <p>chief operating oficer</p>
-          <div class="actions">
-            <a href="mailto:rescalante@ihccbusiness.net">{{fa-icon "envelope"}}contact</a>
-            <a href="">{{fa-icon "user"}}bio</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3">
-        <div class="panel">
-          <img src="/assets/images/francis.png">
-          <h5>Kelly Francis</h5>
-          <p>vice president of corporate relations</p>
-          <div class="actions">
-            <a href="mailto:kfrancis@ihccbusiness.net">{{fa-icon "envelope"}}contact</a>
-            <a href="">{{fa-icon "user"}}bio</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3">
-        <div class="panel">
-          <img src="/assets/images/bonilla.png">
-          <h5>Silvia Bonilla, MBA</h5>
-          <p>director, small business development center</p>
-          <div class="actions">
-            <a href="mailto:sbonilla@ihccbusiness.net">{{fa-icon "envelope"}}contact</a>
-            <a href="">{{fa-icon "user"}}bio</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-3">
-        <div class="panel">
-          <img src="/assets/images/alcantar.png">
-          <h5>Alex Alcantar</h5>
-          <p>director, illinois procurement technical assesstace center at ihcc</p>
-          <div class="actions">
-            <a href="mailto:aalcantar@ihccbusiness.net">{{fa-icon "envelope"}}contact</a>
-            <a href="">{{fa-icon "user"}}bio</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3">
-        <div class="panel">
-          <img src="/assets/images/bran.png">
-          <h5>Liana Bran</h5>
-          <p>director, illinois dhs substance-free worplace program at ihcc</p>
-          <div class="actions">
-            <a href="mailto:lbran@ihccbusiness.net">{{fa-icon "envelope"}}contact</a>
-            <a href="">{{fa-icon "user"}}bio</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3">
-        <div class="panel">
-          <img src="/assets/images/delagarza.png">
-          <h5>Joseph DeLaGarza, MBA</h5>
-          <p>senior bussiness councelor, mbda bussiness center</p>
-          <div class="actions">
-            <a href="mailto:jdelagarza@ihccbusiness.net">{{fa-icon "envelope"}}contact</a>
-            <a href="">{{fa-icon "user"}}bio</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3">
-        <div class="panel">
-          <img src="/assets/images/gloria.png">
-          <h5>Isabel Gloria</h5>
-          <p>Project Coordinator</p>
-          <div class="actions">
-            <a href="mailto:igloria@ihccbusiness.net">{{fa-icon "envelope"}}contact</a>
-            <a href="">{{fa-icon "user"}}bio</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-3">
-        <div class="panel">
-          <img src="/assets/images/garcia.png">
-          <h5>Gabriela Garcia</h5>
-          <p>project director small business transportation resource center</p>
-          <div class="actions">
-            <a href="mailto:ggarcia@ihccbusiness.net">{{fa-icon "envelope"}}contact</a>
-            <a href="">{{fa-icon "user"}}bio</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3">
-        <div class="panel">
-          <img src="/assets/images/reyes.png">
-          <h5>Jacqueline Reyes</h5>
-          <p>
-            project manager small business transportation resource center
-          </p>
-          <div class="actions">
-            <a href="mailto:jreyes@ihccbusiness.net">{{fa-icon "envelope"}}contact</a>
-            <a href="">{{fa-icon "user"}}bio</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3">
-        <div class="panel">
-          <img src="/assets/images/saldana.png">
-          <h5>Juan Saldana</h5>
-          <p>
-            Innovation Strategist/Business Analyst &amp; Mentor 
-          </p>
-          <div class="actions">
-            <a href="mailto:juans@ihccbusiness.net">{{fa-icon "envelope"}}contact</a>
-            <a href="">{{fa-icon "user"}}bio</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3">
-        <div class="panel">
-          <img src="/assets/images/ortiz.png">
-          <h5>Emma Ortiz</h5>
-          <p>
-            director, accounting and administration
-          </p>
-          <div class="actions">
-            <a href="mailto:eortiz@ihccbusiness.net">{{fa-icon "envelope"}}contact</a>
-            <a href="">{{fa-icon "user"}}bio</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-3">
-        <div class="panel">
-          <img src="/assets/images/trevino.png">
-          <h5>Loretta Trevino</h5>
-          <p>
-            program coordinator illinois dhs substance-free worplace program at ihcc events manager
-          </p>
-          <div class="actions">
-            <a href="mailto:ltrevino@ihccbusiness.net">{{fa-icon "envelope"}}contact</a>
-            <a href="">{{fa-icon "user"}}bio</a>
-          </div>
-        </div>
-      </div>
+      {{/each}}
     </div>
   </div>
 </div>
 
-{{#b-modal title="My modal #1"}}
-  This is the content of my modal #1
-{{/b-modal}}
+{{#each model as |person|}}
+   <div class="modal fade" id="{{person.identifier}}">
+      {{#b-modal}}
+        <img src="{{person.image}}">
+        <h3>{{person.name}}</h3>
+        <p>{{person.title}}</p>
+        <p>{{person.bio}}</p>
+        <p>{{person.email}}</p>
+        <p>{{person.phone}}</p>
+      {{/b-modal}}
+   </div>
+{{/each}}
+
+
+
+
 
 
 
