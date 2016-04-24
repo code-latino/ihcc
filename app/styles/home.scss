@@ -265,6 +265,32 @@ body {
 }
 
 
+// Home Modal
+
+.home-modal {
+
+  h3 {
+    color: $blue;
+  }
+
+  .home-modal-header {
+    text-align: center; 
+  }
+
+  .person-title {
+    text-transform: uppercase;
+    font-size: .8;
+  }
+
+  .fa {
+    margin-right: 10px;
+  }
+
+  .modal-body {
+    padding: 3em;
+  }
+}
+
 
 
 
