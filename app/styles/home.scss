@@ -45,9 +45,9 @@ body {
   min-height: 500px;
   position: relative;
 
-  &.hero-top-image {
-    background-image: url(/assets/images/hero-panel.jpg);
-    background-size: cover;
+  img {
+    width: 100%;
+    height: auto;
   }
 
   .hero-top-text {
