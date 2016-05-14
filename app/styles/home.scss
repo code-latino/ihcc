@@ -159,6 +159,7 @@ body {
     .table {
       @include transparency('background-color', rgba(black, 0.6), white);
       border: 1px solid $aqua;
+      border-collapse: inherit;
 
       .fa {
         color: $aqua;
@@ -175,12 +176,17 @@ body {
 
       .btn-column {
         text-align: center;
+        padding: 0;
         &:hover{
           background-color: $aqua;
           color: white
         };
       }
     }
+  }
+
+  .info-section, .info-section a {
+    color: white;
   }
 
   .block-content {
